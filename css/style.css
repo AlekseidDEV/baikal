@@ -72,7 +72,280 @@ input{
     margin: auto;
 }
 
+
+
 /* HEADER */
+.btn_open_burger{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.b-show {
+    animation: showBlock 1s linear forwards;
+  }
+
+  .c-show{
+    animation: fade 1s ease forwards;
+  }
+
+  @keyframes showClose {
+        from {
+            opacity: 1;
+            visibility: visible;
+        }
+        to{
+            opacity: 0;
+            visibility: hidden;
+        }
+  }
+
+  
+  @keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+.open_burger{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/openburger.svg) no-repeat;
+    background-position: center;
+
+}
+.burger__menu{
+    background: #FFFFFF;
+    
+    max-width: 926px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    padding-top: 30px;
+    display: none;
+}
+
+ .close_modal{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/close.svg);
+}
+
+.wrapp_close{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.wrapp_down__menu{
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px 125px;
+  }
+
+.btn__call_modal{
+    display: none;
+}
+
+.modal_sett{
+    display: flex;
+    flex-direction: column;
+}
+
+.link_burger{
+    display: flex;
+    flex-direction: column;
+}
+
+.link_nav_burg{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.03em;
+color: #686868;
+margin-bottom: 20px;
+
+}
+
+.link_nav_burg:last-child{
+    margin-bottom: 0;
+}
+
+.link_nav_burg:hover{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: #2F70D9; 
+}
+
+.sett{
+    position: relative;
+}
+
+.sett_one{
+    position: relative;
+}
+
+.sett_two{
+    position: relative;
+}
+
+.sett_free{
+    position: relative;
+}
+
+.sett_four{
+    position: relative;
+}
+
+.sett:hover::after{
+position: absolute;
+content: '';
+top: 7px;
+left: 90px;
+background: url(../img/icon/Выделение.svg) no-repeat;
+background-position: center;
+width: 101px;
+height: 9px;
+}
+
+.sett:hover::after{
+    position: absolute;
+    content: '';
+    top: 7px;
+    left: 100px;
+    background: url(../img/icon/Выделение.svg) no-repeat;
+    background-position: center;
+    width: 101px;
+    height: 9px;
+    }
+
+    .sett_one:hover::after{
+        position: absolute;
+        content: '';
+        top: 7px;
+        left: 140px;
+        background: url(../img/icon/Выделение.svg) no-repeat;
+        background-position: center;
+        width: 101px;
+        height: 9px;
+        }
+
+        .sett_two:hover::after{
+            position: absolute;
+            content: '';
+            top: 7px;
+            left: 160px;
+            background: url(../img/icon/Выделение.svg) no-repeat;
+            background-position: center;
+            width: 101px;
+            height: 9px;
+            }
+
+            .sett_free:hover::after{
+                position: absolute;
+                content: '';
+                top: 7px;
+                left: 90px;
+                background: url(../img/icon/Выделение.svg) no-repeat;
+                background-position: center;
+                width: 101px;
+                height: 9px;
+                }
+
+                .sett_four:hover::after{
+                    position: absolute;
+                    content: '';
+                    top: 7px;
+                    left: 100px;
+                    background: url(../img/icon/Выделение.svg) no-repeat;
+                    background-position: center;
+                    width: 101px;
+                    height: 9px;
+                    }
+
+.burger__social_link_w{
+    background: url(../img/icon/modalwatt.svg) no-repeat #A7D91A;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.burger__social_link_v{
+    background: url(../img/icon/modalwibe.svg) no-repeat #C652EE;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.wrapp_block_cont_burg{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.soc_burger_link__block{
+    display: flex;
+    gap: 0px 5px ;
+    margin-top: 15px;
+}
+
+.adress_burg_tit{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+letter-spacing: 0.05em;
+color: #686868;
+margin-bottom: 5px;
+}
+
+.text_burg__adress{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 141.18%;
+letter-spacing: 0.03em;
+color: #686868;
+margin-bottom: 15px;
+}
+
+.number__burg{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 5px;
+}
+
+.number__burg:last-child{
+    margin-bottom: 0;
+}
+
 
 .header{
     padding-top: 30px;
@@ -82,6 +355,7 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .nav__menu{
     display: flex;
@@ -221,6 +495,7 @@ font-size: 18px;
 line-height: 25px;
 letter-spacing: 0.03em;
 color: #2F70D9;
+
 }
 
 .logo{
@@ -321,6 +596,19 @@ color: #FFFFFF;
     margin-top: 80px;
 }
 
+.text_block__our{
+    position: relative;
+}
+
+.text_block__our::after{
+    position: absolute;
+    content: '';
+    width: 101px;
+    height: 9px;
+    background: url(../img/icon/Выделение.svg);
+    top: 460px;
+    left: 0;
+}
 
 
 .text__our{
@@ -349,6 +637,18 @@ font-size: 50px;
 line-height: 64px;
 letter-spacing: 0.03em;
 color: #2F70D9;
+position: relative;
+display: flex;
+}
+
+.title_our::after{
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 13px;
+    background: url(../img/icon/Выделениесерое.svg);
+    top: -10px;
+    left: 190px;
 }
 
 /* WE OFFER */
@@ -411,8 +711,19 @@ font-size: 50px;
 line-height: 64px;
 letter-spacing: 0.03em;
 color: #2F70D9;
-
+position: relative;
 }
+
+.offer_ttitle::after{
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 13px;
+    background: url(../img/icon/Выделениесерое.svg);
+    top: -10px;
+    left: 285px;
+}
+
 
 /* OUR NUMBER */
 
@@ -552,6 +863,17 @@ font-size: 50px;
 line-height: 64px;
 letter-spacing: 0.03em;
 color: #2F70D9;
+position: relative;
+}
+
+.title__num::after{
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 13px;
+    background: url(../img/icon/Выделениесерое.svg);
+    top: -10px;
+    left: 215px;
 }
 
 /* REQWIEV */
@@ -575,6 +897,8 @@ letter-spacing: 0.03em;
 color: #2F70D9;
 padding-bottom: 29px;
 }
+
+
 
 .text_rew_cart{
 font-family: 'Open Sans';
@@ -633,7 +957,20 @@ line-height: 64px;
 letter-spacing: 0.03em;
 color: #2F70D9;
 margin-bottom: 80px;
+position: relative;
 }
+
+.title_req::after{
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 13px;
+    background: url(../img/icon/Выделениесерое.svg);
+    top: -10px;
+    left: 225px;
+}
+
+
 
 iframe{
     border-radius: 20px;
@@ -669,6 +1006,17 @@ letter-spacing: 0.03em;
 color: #2F70D9;
 padding-top: 32px;
 padding-bottom: 25px;
+position: relative;
+}
+
+.title_contacts::after{
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 13px;
+    background: url(../img/icon/Выделениесерое.svg);
+    top: 30px;
+    left: 120px;
 }
 
 .text_adress_tit{
